@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Advanced Registration Form</h1>
+
+    <form action="#" method="post" autocomplete="on">
+
+        <!-- Section 1 -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name:</label><br>
+            <input 
+                type="text"
+                id="fullname"
+                name="fullname"
+                placeholder="Enter your full name"
+                required
+                minlength="3"
+                maxlength="40"
+                autofocus
+                autocomplete="name"
+            ><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input 
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@gmail.com"
+                required
+                autocomplete="email"
+            ><br><br>
+
+            <label for="password">Password:</label><br>
+            <input 
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter strong password"
+                required
+                minlength="8"
+                maxlength="16"
+                pattern="(?=.*[A-Z])(?=.*[0-9]).{8,16}"
+            ><br><br>
+
+            <label for="age">Age:</label><br>
+            <input 
+                type="number"
+                id="age"
+                name="age"
+                min="18"
+                max="60"
+                step="1"
+                required
+            ><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input 
+                type="date"
+                id="dob"
+                name="dob"
+                required
+            ><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input 
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="9876543210"
+                pattern="[0-9]{10}"
+                required
+            ><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Section 2 -->
+        <fieldset>
+            <legend>Professional Details</legend>
+
+            <label for="website">Portfolio Website:</label><br>
+            <input 
+                type="url"
+                id="website"
+                name="website"
+                placeholder="https://yourwebsite.com"
+            ><br><br>
+
+            <label for="favcolor">Favorite Color:</label><br>
+            <input 
+                type="color"
+                id="favcolor"
+                name="favcolor"
+            ><br><br>
+
+            <label for="skill">Skill Level:</label><br>
+            <input 
+                type="range"
+                id="skill"
+                name="skill"
+                min="1"
+                max="10"
+                step="1"
+            ><br><br>
+
+            <label for="resume">Upload Resume:</label><br>
+            <input 
+                type="file"
+                id="resume"
+                name="resume"
+                required
+            ><br><br>
+
+            <label for="meetingtime">Interview Time:</label><br>
+            <input 
+                type="time"
+                id="meetingtime"
+                name="meetingtime"
+            ><br><br>
+
+            <!-- Dropdown 1 -->
+            <label for="department">Select Department:</label><br>
+            <select id="department" name="department" required>
+
+                <optgroup label="Technical">
+                    <option value="developer">Developer</option>
+                    <option value="tester">Tester</option>
+                    <option value="designer">Designer</option>
+                </optgroup>
+
+                <optgroup label="Management">
+                    <option value="hr">HR</option>
+                    <option value="manager">Manager</option>
+                    <option value="teamlead">Team Lead</option>
+                </optgroup>
+
+            </select><br><br>
+
+            <!-- Dropdown 2 -->
+            <label for="country">Select Country:</label><br>
+            <select id="country" name="country">
+
+                <optgroup label="Asia">
+                    <option>India</option>
+                    <option>Japan</option>
+                    <option>Singapore</option>
+                </optgroup>
+
+                <optgroup label="Europe">
+                    <option>Germany</option>
+                    <option>France</option>
+                    <option>Italy</option>
+                </optgroup>
+
+            </select><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Section 3 -->
+        <fieldset>
+            <legend>Preferences & Additional Details</legend>
+
+            <!-- Checkbox -->
+            <label>Choose Your Skills:</label><br>
+
+            <input type="checkbox" name="skills" value="html"> HTML
+            <input type="checkbox" name="skills" value="css"> CSS
+            <input type="checkbox" name="skills" value="javascript"> JavaScript
+            <input type="checkbox" name="skills" value="python"> Python
+
+            <br><br>
+
+            <!-- Radio Buttons -->
+            <label>Work Preference:</label><br>
+
+            <input type="radio" name="workmode" value="office" required> Office
+            <input type="radio" name="workmode" value="remote"> Remote
+            <input type="radio" name="workmode" value="hybrid"> Hybrid
+
+            <br><br>
+
+            <!-- Datalist -->
+            <label for="browser">Preferred Browser:</label><br>
+
+            <input 
+                list="browsers"
+                id="browser"
+                name="browser"
+                placeholder="Choose browser"
+            >
+
+            <datalist id="browsers">
+                <option value="Google Chrome">
+                <option value="Mozilla Firefox">
+                <option value="Microsoft Edge">
+                <option value="Safari">
+                <option value="Opera">
+            </datalist>
+
+            <br><br>
+
+            <!-- Textarea -->
+            <label for="about">About Yourself:</label><br>
+
+            <textarea
+                id="about"
+                name="about"
+                rows="5"
+                cols="50"
+                maxlength="250"
+                placeholder="Write something about yourself..."
+                required
+            ></textarea>
+
+            <br><br>
+
+            <!-- Readonly -->
+            <label for="userid">User ID:</label><br>
+
+            <input 
+                type="text"
+                id="userid"
+                value="USER2026"
+                readonly
+            >
+
+            <br><br>
+
+            <!-- Disabled -->
+            <label for="membership">Premium Membership:</label><br>
+
+            <input 
+                type="text"
+                id="membership"
+                value="Currently Unavailable"
+                disabled
+            >
+
+        </fieldset>
+
+        <br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Submit Form">
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+</html>
