@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complex Table Design</title>
+</head>
+
+<body bgcolor="#f4f6f9">
+
+    <center>
+        <h1><u>Advanced Product Comparison Table</u></h1>
+        <p><i>Demonstration of Complex HTML Tables with Nested Structures</i></p>
+    </center>
+
+    <table border="2" cellpadding="12" cellspacing="5" width="100%">
+
+        <!-- TABLE HEADER -->
+        <thead bgcolor="#2c3e50">
+            <tr>
+                <th scope="col"><font color="white">Feature</font></th>
+                <th scope="col"><font color="white">Starter Plan</font></th>
+                <th scope="col"><font color="white">Professional Plan</font></th>
+                <th scope="col"><font color="white">Enterprise Plan</font></th>
+                <th scope="col"><font color="white">Ultimate Plan</font></th>
+            </tr>
+        </thead>
+
+        <!-- TABLE BODY -->
+        <tbody>
+
+            <!-- PRODUCT IMAGES -->
+            <tr bgcolor="#ecf0f1">
+                <th scope="row" align="left">Product Image</th>
+
+                <td align="center" valign="middle">
+                    <img src="https://via.placeholder.com/80"
+                         alt="Starter Plan">
+                </td>
+
+                <td align="center" valign="middle">
+                    <img src="https://via.placeholder.com/80"
+                         alt="Professional Plan">
+                </td>
+
+                <td align="center" valign="middle">
+                    <img src="https://via.placeholder.com/80"
+                         alt="Enterprise Plan">
+                </td>
+
+                <td align="center" valign="middle">
+                    <img src="https://via.placeholder.com/80"
+                         alt="Ultimate Plan">
+                </td>
+            </tr>
+
+            <!-- PRICE ROW -->
+            <tr bgcolor="#d6eaf8">
+                <th scope="row" align="left">Monthly Price</th>
+
+                <td align="center">
+                    <b>$19</b>/month
+                </td>
+
+                <td align="center">
+                    <b>$49</b>/month
+                </td>
+
+                <td align="center">
+                    <b>$99</b>/month
+                </td>
+
+                <td align="center">
+                    <b>$199</b>/month
+                </td>
+            </tr>
+
+            <!-- STORAGE -->
+            <tr bgcolor="#ecf0f1">
+                <th scope="row" align="left">Cloud Storage</th>
+
+                <td align="center">50 GB</td>
+                <td align="center">200 GB</td>
+                <td align="center">1 TB</td>
+                <td align="center">Unlimited</td>
+            </tr>
+
+            <!-- USERS -->
+            <tr bgcolor="#d6eaf8">
+                <th scope="row" align="left">Users Allowed</th>
+
+                <td align="center">1 User</td>
+                <td align="center">5 Users</td>
+                <td align="center">20 Users</td>
+                <td align="center">Unlimited Users</td>
+            </tr>
+
+            <!-- SUPPORT -->
+            <tr bgcolor="#ecf0f1">
+                <th scope="row" align="left">Customer Support</th>
+
+                <td align="center">Email Support</td>
+                <td align="center">Chat Support</td>
+                <td align="center">24/7 Priority</td>
+                <td align="center">Dedicated Manager</td>
+            </tr>
+
+            <!-- MERGED CELL -->
+            <tr bgcolor="#d6eaf8">
+                <th scope="row" align="left">AI Features</th>
+
+                <td colspan="2" align="center" valign="middle">
+                    <b>Basic AI Automation Included</b>
+                </td>
+
+                <td colspan="2" align="center" valign="middle">
+                    <b>Advanced AI + Predictive Analytics</b>
+                </td>
+            </tr>
+
+            <!-- ROWSPAN -->
+            <tr bgcolor="#ecf0f1">
+                <th scope="row" rowspan="2" align="left" valign="top">
+                    Security Features
+                </th>
+
+                <td align="center">SSL Security</td>
+                <td align="center">2FA Login</td>
+                <td align="center">Advanced Firewall</td>
+                <td align="center">Enterprise Encryption</td>
+            </tr>
+
+            <tr bgcolor="#ecf0f1">
+                <td align="center">Basic Backup</td>
+                <td align="center">Daily Backup</td>
+                <td align="center">Hourly Backup</td>
+                <td align="center">Realtime Backup</td>
+            </tr>
+
+            <!-- NESTED TABLE -->
+            <tr bgcolor="#d6eaf8">
+                <th scope="row" align="left" valign="top">
+                    Pricing Breakdown
+                </th>
+
+                <td colspan="4">
+
+                    <table border="1" cellpadding="6" cellspacing="2" width="100%">
+                        <tr bgcolor="#5dade2">
+                            <th>Plan</th>
+                            <th>Base Price</th>
+                            <th>Tax</th>
+                            <th>Total</th>
+                        </tr>
+
+                        <tr bgcolor="#ebf5fb">
+                            <td>Starter</td>
+                            <td>$19</td>
+                            <td>$2</td>
+                            <td><b>$21</b></td>
+                        </tr>
+
+                        <tr bgcolor="#d4e6f1">
+                            <td>Professional</td>
+                            <td>$49</td>
+                            <td>$5</td>
+                            <td><b>$54</b></td>
+                        </tr>
+
+                        <tr bgcolor="#ebf5fb">
+                            <td>Enterprise</td>
+                            <td>$99</td>
+                            <td>$10</td>
+                            <td><b>$109</b></td>
+                        </tr>
+
+                        <tr bgcolor="#d4e6f1">
+                            <td>Ultimate</td>
+                            <td>$199</td>
+                            <td>$20</td>
+                            <td><b>$219</b></td>
+                        </tr>
+                    </table>
+
+                </td>
+            </tr>
+
+            <!-- WEBSITE LINK -->
+            <tr bgcolor="#ecf0f1">
+                <th scope="row" align="left">Official Website</th>
+
+                <td align="center">
+                    <a href="https://example.com">Visit</a>
+                </td>
+
+                <td align="center">
+                    <a href="https://example.com">Visit</a>
+                </td>
+
+                <td align="center">
+                    <a href="https://example.com">Visit</a>
+                </td>
+
+                <td align="center">
+                    <a href="https://example.com">Visit</a>
+                </td>
+            </tr>
+
+            <!-- FORMATTED TEXT -->
+            <tr bgcolor="#d6eaf8">
+                <th scope="row" align="left">Special Notes</th>
+
+                <td valign="top">
+                    <b>Best</b> for <i>beginners</i>
+                </td>
+
+                <td valign="middle">
+                    <u>Most Popular</u> Plan
+                </td>
+
+                <td valign="bottom">
+                    <b><i>Recommended</i></b> for companies
+                </td>
+
+                <td align="right">
+                    <u><b>Premium Choice</b></u>
+                </td>
+            </tr>
+
+        </tbody>
+
+        <!-- TABLE FOOTER -->
+        <tfoot bgcolor="#34495e">
+            <tr>
+                <td colspan="5" align="center">
+                    <font color="white">
+                        <b>© 2026 Paithacs - All Plans Include Free Updates</b>
+                    </font>
+                </td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+</body>
+</html>
