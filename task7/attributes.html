@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Metadata -->
+    <meta name="description" content="HTML Attributes and Metadata Showcase">
+    <meta name="keywords" content="HTML, Attributes, Metadata, Data Attributes">
+    <meta name="author" content="Rajkumar">
+
+    <title>HTML Attributes & Metadata Showcase</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+</head>
+
+<body id="top" class="main-body">
+
+    <!-- Header -->
+    <header id="header-section" class="header" title="Main Header">
+        <h1 id="main-title" class="title" title="HTML Attribute Demo">
+            HTML Attributes & Metadata Showcase
+        </h1>
+
+        <p id="intro-text"
+           class="intro"
+           title="Introduction Paragraph"
+           data-page-type="educational">
+            This page demonstrates advanced HTML attributes and metadata usage.
+        </p>
+    </header>
+
+    <!-- Navigation -->
+    <nav id="main-nav" class="navigation" title="Navigation Menu">
+        <ul>
+            <li>
+                <a id="nav-home"
+                   class="nav-link"
+                   href="#products"
+                   title="Go to Products Section"
+                   tabindex="1">
+                   Products
+                </a>
+            </li>
+
+            <li>
+                <a id="nav-form"
+                   class="nav-link"
+                   href="#forms"
+                   title="Go to Forms Section"
+                   tabindex="2">
+                   Forms
+                </a>
+            </li>
+
+            <li>
+                <a id="nav-special"
+                   class="nav-link"
+                   href="#special"
+                   title="Go to Special Characters Section"
+                   tabindex="3">
+                   Special Characters
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content" class="content-area">
+
+        <!-- Products Section -->
+        <section id="products" class="section-box" title="Products Section">
+
+            <h2 id="product-heading"
+                class="section-title"
+                data-category="electronics">
+                Product Showcase
+            </h2>
+
+            <!-- Product 1 -->
+            <article id="product1"
+                     class="product-card draggable-item"
+                     title="Laptop Product"
+                     data-product-id="P101"
+                     data-price="75000"
+                     draggable="true">
+
+                <h3 class="product-title">Laptop Pro &trade;</h3>
+
+                <p class="product-description">
+                    Price: &#8377;75,000 &nbsp; | &nbsp; Discount: 10&percnt;
+                </p>
+            </article>
+
+            <!-- Product 2 -->
+            <article id="product2"
+                     class="product-card draggable-item"
+                     title="Mobile Product"
+                     data-product-id="P102"
+                     data-price="25000"
+                     draggable="true">
+
+                <h3 class="product-title">Smart Mobile &reg;</h3>
+
+                <p class="product-description">
+                    Cost: &euro;350 &nbsp; | &nbsp; Limited Offer
+                </p>
+            </article>
+
+            <!-- Product 3 -->
+            <article id="product3"
+                     class="product-card draggable-item"
+                     title="Headphones Product"
+                     data-product-id="P103"
+                     data-price="5000"
+                     draggable="true">
+
+                <h3 class="product-title">Music Beats &copy;</h3>
+
+                <p class="product-description">
+                    Price in UK: &pound;45
+                </p>
+            </article>
+
+        </section>
+
+        <!-- Editable Content -->
+        <section id="editable-section"
+                 class="section-box"
+                 title="Editable Section">
+
+            <h2 class="section-title">
+                Editable Content
+            </h2>
+
+            <p id="editable-para1"
+               class="editable-box"
+               contenteditable="true"
+               title="Editable Paragraph">
+                You can edit this paragraph directly in the browser.
+            </p>
+
+            <div id="editable-div"
+                 class="editable-box"
+                 contenteditable="true"
+                 title="Editable Div">
+                This editable div allows users to modify the content.
+            </div>
+
+        </section>
+
+        <!-- Forms Section -->
+        <section id="forms"
+                 class="section-box"
+                 title="Forms Section">
+
+            <h2 class="section-title">
+                Form Attributes Demo
+            </h2>
+
+            <form id="sample-form" class="form-area">
+
+                <label for="username">Username:</label><br>
+                <input type="text"
+                       id="username"
+                       class="input-field"
+                       spellcheck="true"
+                       tabindex="0"
+                       title="Enter Username"><br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email"
+                       id="email"
+                       class="input-field"
+                       spellcheck="false"
+                       title="Enter Email Address"><br><br>
+
+                <label for="message">Message:</label><br>
+                <textarea id="message"
+                          class="textarea-field"
+                          spellcheck="true"
+                          rows="5"
+                          cols="40"
+                          title="Enter Message"></textarea><br><br>
+
+                <button type="submit"
+                        id="submit-btn"
+                        class="btn"
+                        title="Submit Form"
+                        tabindex="-1">
+                    Submit
+                </button>
+
+            </form>
+        </section>
+
+        <!-- Language & Direction -->
+        <section id="language-section"
+                 class="section-box"
+                 title="Language Examples">
+
+            <h2 class="section-title">
+                Language & Direction Attributes
+            </h2>
+
+            <p lang="fr">
+                Bonjour! Ceci est un texte en français.
+            </p>
+
+            <p lang="ta">
+                வணக்கம்! இது தமிழ் உரை.
+            </p>
+
+            <p dir="rtl">
+                هذا نص باللغة العربية
+            </p>
+
+        </section>
+
+        <!-- Translate Attribute -->
+        <section id="translate-section"
+                 class="section-box"
+                 title="Translate Attribute Section">
+
+            <h2 class="section-title">
+                Translate Attribute Example
+            </h2>
+
+            <p translate="no"
+               class="no-translate">
+                OpenAI ChatGPT Focult Django PyQt5
+            </p>
+
+        </section>
+
+        <!-- Hidden Content -->
+        <section id="hidden-demo"
+                 class="section-box">
+
+            <h2 class="section-title">
+                Hidden Attribute Example
+            </h2>
+
+            <p hidden>
+                This content is hidden using the hidden attribute.
+            </p>
+
+        </section>
+
+        <!-- Special Characters -->
+        <section id="special"
+                 class="section-box"
+                 title="HTML Entities Section">
+
+            <h2 class="section-title">
+                HTML Special Characters & Entities
+            </h2>
+
+            <p>
+                &copy; 2026 Rajkumar. All Rights Reserved.
+            </p>
+
+            <p>
+                Registered Product &reg; and Trademark &trade;
+            </p>
+
+            <p>
+                Currency Symbols: &euro; &pound; &#8377;
+            </p>
+
+            <p>
+                HTML Symbols: &lt;html&gt; &amp; &quot;attributes&quot;
+            </p>
+
+            <p>
+                Non-breaking space example:
+                Hello&nbsp;World
+            </p>
+
+            <p>
+                Greater than &gt; and Less than &lt;
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer-section"
+            class="footer"
+            title="Footer Section">
+
+        <p class="footer-text">
+            Created for HTML Attribute Demonstration &copy; 2026
+        </p>
+
+    </footer>
+
+</body>
+</html>
