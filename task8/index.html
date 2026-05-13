@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Documentation - HTML Guide</title>
+</head>
+<body>
+
+<a href="#main-content">Skip to Content</a>
+
+<header>
+    <h1>HTML Documentation Website</h1>
+
+    <nav role="navigation" aria-label="Main Navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="getting-started.html">Getting Started</a></li>
+            <li><a href="reference.html">Reference</a></li>
+            <li><a href="examples.html">Examples</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+        </ul>
+    </nav>
+
+    <form role="search" aria-label="Website Search">
+        <label for="search-home">Search Documentation</label><br>
+        <input type="search" id="search-home" name="search-home" placeholder="Search here">
+        <button type="submit">Search</button>
+    </form>
+</header>
+
+<hr>
+
+<nav aria-label="Breadcrumb">
+    <ol>
+        <li><a href="index.html">Home</a></li>
+    </ol>
+</nav>
+
+<main id="main-content" role="main">
+
+    <section>
+        <h2>Welcome</h2>
+        <p>
+            This documentation website demonstrates advanced HTML concepts,
+            accessibility standards, semantic elements, ARIA attributes,
+            forms, navigation structures, and documentation layouts.
+        </p>
+
+        <img src="images/html-guide.jpg" alt="HTML documentation guide illustration" width="300">
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="features-heading">
+        <h2 id="features-heading">Website Features</h2>
+
+        <ul>
+            <li>Accessible navigation</li>
+            <li>Semantic HTML structure</li>
+            <li>Breadcrumb navigation</li>
+            <li>Expandable documentation sections</li>
+            <li>Search functionality</li>
+        </ul>
+
+        <details>
+            <summary>Why Accessibility Matters</summary>
+            <p>
+                Accessibility ensures all users, including people with disabilities,
+                can access and understand website content.
+            </p>
+        </details>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Quick Information</h2>
+
+        <p>
+            HTML stands for HyperText Markup Language.<br>
+            It is used to create web pages and web applications.
+        </p>
+
+        <details>
+            <summary>View HTML Benefits</summary>
+            <p>HTML is easy to learn, flexible, and supported by all browsers.</p>
+        </details>
+    </section>
+
+</main>
+
+<footer role="contentinfo">
+
+    <h2>Contact Information</h2>
+
+    <address>
+        Email: support@example.com<br>
+        Phone: +91 9876543210<br>
+        Chennai, Tamil Nadu, India
+    </address>
+
+    <p>
+        Last Updated:
+        <time datetime="2026-05-12">May 12, 2026</time>
+    </p>
+
+    <p>
+        <a href="#">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">LinkedIn</a>
+    </p>
+
+    <p>&copy; 2026 HTML Guide Documentation</p>
+
+</footer>
+
+</body>
+</html>
